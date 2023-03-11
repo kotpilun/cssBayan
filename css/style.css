@@ -24,7 +24,7 @@ h1 {
 }
 
 .list:hover {
-    color:blue;
+    color:red;
 }
 
 .item {
@@ -72,7 +72,8 @@ h1 {
 
 .item-img {
     margin-top: 10px;
-    max-height: 400px;
+    max-height: 250px;
+    min-height: 250px;
     scale: .01;
     transition: scale .5s;
 }
@@ -98,7 +99,6 @@ input:checked + .content +.item-label {
 }
 
 .content:active:hover {
-    /* color:darkslategray; */
     filter: blur(2px);
 }
 .content:active:hover + .item-label {
