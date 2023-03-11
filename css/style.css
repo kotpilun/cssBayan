@@ -23,9 +23,7 @@ h1 {
     margin: 100px auto;
 }
 
-.list:hover {
-    color:red;
-}
+
 
 .item {
     list-style: none;
@@ -104,4 +102,38 @@ input:checked + .content +.item-label {
 .content:active:hover + .item-label {
     color:darkslategray;
     filter: blur(1px);
+}
+
+@media screen and (min-width: 821px) {
+    .list:hover {
+        color:red;
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+    .container {
+        max-width: 560px;
+    }
+    .accordion {
+        margin: 50px auto;
+    }
+    h1 {
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+    .item {
+        margin: 0;
+        padding: 5px;
+    }
+    .item-label {
+        font-size: 1.7rem;
+    }
+    .icono-caretDown::before, .icono-caretDown::after {
+        width: 11px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
 }
