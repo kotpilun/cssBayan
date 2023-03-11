@@ -99,7 +99,7 @@ input:checked + .content +.item-label {
 
 .content:active:hover {
     /* color:darkslategray; */
-    filter: blur(1px);
+    filter: blur(2px);
 }
 .content:active:hover + .item-label {
     color:darkslategray;
